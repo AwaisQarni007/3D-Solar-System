@@ -1,21 +1,53 @@
-.Links{
+.Links {
     width: 20vw;
     height: 10vh;
-    border: 1px solid red;
-    position:fixed;
+    position: fixed;
     right: 0;
     bottom: 0;
     font-size: 1rem;
+    padding: 10px 20px;
+    z-index: 999999;
+    animation-name: onLoad;
+    animation-duration: 1s;
+    opacity: 1;
+    animation-iteration-count: 1;
+    animation-direction: linear;
 }
-.Links ul{
+
+@keyframes onLoad {
+    0% {
+        bottom: -50%;
+        opacity: 0;
+    }
+
+    50% {
+        bottom: -25%;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0%;
+    }
+}
+
+.Links ul {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    flex-direction: row-reverse;
 }
-.Links ul li{ 
+
+.Links ul li {
     list-style: none;
 }
-.Links ul li a{
-    color: white;
+
+.Links ul li a {
+    color: rgb(172, 170, 170);
     text-decoration: none;
+}
+
+.Links ul li a:hover {
+    color: rgb(255, 255, 255);
+    transform: scaleX(1.2);
+    /* text-decoration: underline; */
 }
