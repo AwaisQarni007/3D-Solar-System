@@ -1,0 +1,21 @@
+.Links{
+    width: 20vw;
+    height: 10vh;
+    border: 1px solid red;
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 1rem;
+}
+.Links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Links ul li{ 
+    list-style: none;
+}
+.Links ul li a{
+    color: white;
+    text-decoration: none;
+}
